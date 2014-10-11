@@ -1,0 +1,156 @@
+<template name="OrderAdd">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="col-sm-7">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						Item Search
+					</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<select id="itemSearch" class="form-control" placehodler="Type here to search for items.">
+								<option value=""></option>
+								{{#each items}}
+								<option value="{{ id }}">{{ name }}</option>
+								{{/each}}
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						Browse Items
+					</div>
+					<div class="panel-body">
+						<div class="panel-group" id="accordion">
+							{{#each categories}}
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#{{ categoryID this }}">
+											{{ this }}
+										</a>
+									</h4>
+								</div>
+								<div id="{{ categoryID this }}" class="panel-collapse collapse">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Price</th>
+												<th width="32">
+													<span class="icon-material-add-box"></span>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											{{#each productsInCategory this}}
+											<tr>
+												<td>{{ name }}</td>
+												<td>{{ price }}</td>
+												<td class="text-center">
+													<span class="icon-material-add-box addFromList" data-id="{{ id }}"></span>
+												</td>
+											</tr>
+											{{/each}}
+										</tbody>
+									</table>
+								</div>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<div class="panel panel-warning" style="position: fixed; width: 520px;">
+					<div class="panel-heading">Current Order</div>
+					<div class="panel-body btn-warning">
+						{{#unless ordersCount}}
+						<p></p>
+						<p></p>
+						<p class="text-center">Add items to your order from the options available on the left.</p>
+						<p></p>
+						<p></p>
+						{{else}}
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Item</th>
+									<th>Rate</th>
+									<th>Qty</th>
+									<th>Price</th>
+									<th width="32">
+										<span class="icon-material-expand-less"></span>
+									</th>
+									<th width="32">
+										<span class="icon-material-expand-more"></span>
+									</th>
+									<th width="32">
+										<span class="icon-material-close"></span>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								{{#each orders}}
+								<tr>
+									<td>{{ itemName item }}</td>
+									<td class="text-right">{{ price }}</td>
+									<td class="text-right">{{ quantity }}</td>
+									<td class="text-right">{{ multiply price quantity }}</td>
+									<td class="text-center">
+										<small class="icon-material-expand-less incrementQty" data-id="{{ id }}"></small>
+									</td>
+									<td class="text-center">
+										<small class="icon-material-expand-more decrementQty" data-id="{{ id }}"></small>
+									</td>
+									<td class="text-center">
+										<small class="icon-material-close removeItem" data-id="{{ id }}"></small>
+									</td>
+								</tr>
+								{{/each}}
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Total</th>
+									<th></th>
+									<th class="text-right">{{ totalQuantity }}</th>
+									<th class="text-right">{{ totalBill }}</th>
+									<th></th>
+									<th></th>
+									<th></th>
+								</tr>
+							</tfoot>
+						</table>
+						<button class="btn btn-flat btn-block btn-material-bluegrey">PLACE ORDER</button>
+						{{/unless}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a class="hide" data-toggle="modal" id="posseModalTrigger" data-target="#posseModal">asd</a>
+
+	<div class="modal fade" id="posseModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Sast Kalandar</h4>
+				</div>
+				<div class="modal-body">
+					<form class="bs-component">
+						<div class="form-group has-warning">
+							<label class="control-label" for="posseSize">Please enter your group size</label>
+							<input type="number" class="form-control" id="posseSize" />
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning">Continue</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</template>

@@ -1,0 +1,47 @@
+<template name="OrdersIndex">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="col-sm-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">New Bill</div>
+					<div class="panel-body btn-success text-center">
+						<br /><br />
+						<a class="icon-material-add" style="font-size: 200px; color: #fff; text-decoration: none;" href="{{ pathFor 'order.add' }}"></a>
+						<br /><br />
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-info">
+					<div class="panel-heading">Reports</div>
+					<div class="panel-body btn-info">
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">Online Orders</div>
+					<div class="panel-body btn-warning">
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="col-sm-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Daily Store Target</div>
+					<div class="panel-body">
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+								<span class="sr-only">65% Complete</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
