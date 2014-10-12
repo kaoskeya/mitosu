@@ -64,6 +64,31 @@
 			</div>
 			<div class="col-sm-5">
 				<div class="panel panel-warning" style="position: fixed; width: 520px;">
+
+
+				{{#if recommendations}}
+				<div class="panel panel-warning">
+					<div class="panel-heading">Offers for you</div>
+					<div class="panel-body btn-material-lightgrey">
+					{{#with recommendations}}
+						<ul class="list-group">
+							<li class="list-group-item">Customer Type: <b>{{ this.customer_segment }}</b></li>
+							{{#if this.item_recommendations}}
+								<li class="list-group-item">Item recommendations:</li>
+								{{#each this.item_recommendations}}
+								<li class="list-group-item list-group-item-success">{{ itemName this }}</li>
+								{{/each}}
+								<li class="list-group-item">You qualify for a <b>{{ this.discount }}% discount</b>.</li>
+							{{else}}
+								<li class="list-group-item list-group-item-danger">No recommendations for you.</li>
+							{{/if}}
+						</ul>
+					{{/with}}
+					</div>
+				</div>
+				{{/if}}
+
+
 					<div class="panel-heading">Current Order</div>
 					<div class="panel-body btn-warning">
 						{{#unless ordersCount}}
@@ -122,7 +147,7 @@
 								</tr>
 							</tfoot>
 						</table>
-						<button class="btn btn-flat btn-block btn-material-bluegrey">PLACE ORDER</button>
+						<button class="btn btn-flat btn-block btn-material-bluegrey" id="placeOrder">PLACE ORDER</button>
 						{{/unless}}
 					</div>
 				</div>
@@ -136,7 +161,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Sast Kalandar</h4>
+					<h4 class="modal-title">Sust Kalandar</h4>
 				</div>
 				<div class="modal-body">
 					<form class="bs-component">
@@ -147,7 +172,7 @@
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-warning">Continue</button>
+					<button type="button" class="btn btn-warning" data-dismiss="modal">Continue</button>
 				</div>
 			</div>
 		</div>

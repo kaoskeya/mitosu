@@ -3,6 +3,13 @@
 /* OrderAdd: Event Handlers and Helpersss .js*/
 /*****************************************************************************/
 Template.OrderAdd.events({
+  'click #placeOrder': function() {
+    HTTP.post(
+      "http://10.14.123.138:6543/dss", 
+      { data: { items: Orders.find().fetch(), group_size: Session.get('posseSize') } }, 
+      function(err, resp){ Session.set('recommendations', resp) }
+    );
+  },
   'keyup #posseSize': function(e) {
     Session.set('posseSize', parseInt( $(e.target).val() ) )
   },
@@ -114,6 +121,11 @@ Template.OrderAdd.helpers({
   },
   totalBill: function() {
     return _.reduce( _.map(Orders.find().fetch(), function(order){ return order.quantity * order.price } ), function(a, b) { return a+b } )
+  },
+  recommendations: function() {
+    if(Session.get('recommendations'))
+      return Session.get('recommendations').data
+    return false;
   }
   /*
    * Example:
