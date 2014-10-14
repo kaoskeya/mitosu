@@ -1,0 +1,101 @@
+Category Name,Value,Big Spender,Small Spender
+Chai Shai at 4,Bhelpuri,0.040268456,0.057885906
+Chai Shai at 4,Bread Pakoda,0.048657718,0.048657718
+Chai Shai at 4,Bun Samosa,0.032718121,0.057885906
+Chai Shai at 4,Chai Masala,0.020973154,0.073825503
+Chai Shai at 4,Cheese Maggi,0.05704698,0.041946309
+Chai Shai at 4,Cholle Masala Kulcha,0.057885906,0.024328859
+Chai Shai at 4,Cholle Samose ki Chaat Spicy,0.065436242,0.024328859
+Chai Shai at 4,Dahi Papdi Chaat Spicy,0.053691275,0.048657718
+Chai Shai at 4,Hot n Spicy Tikki Chaat,0.05704698,0.048657718
+Chai Shai at 4,Masala Pav Bhaji Spicy,0.073825503,0.020973154
+Chai Shai at 4,Mini Samosa,0.024328859,0.057885906
+Chai Shai at 4,NULL,0.041946309,0.05704698
+Chai Shai at 4,Palak Patta Chaat,0.057885906,0.040268456
+Chai Shai at 4,Sabudana Vada,0.048657718,0.05704698
+Chai Shai at 4,Samosa Chutney,0.024328859,0.066275168
+Chai Shai at 4,Snack Box,0.066275168,0.024328859
+Chai Shai at 4,Tadkewali Maggi,0.05704698,0.041107383
+Chai Shai at 4,Tikki Cholle,0.057885906,0.032718121
+Chai Shai at 4,Vada Pav (double),0.041107383,0.05704698
+Chai Shai at 4,Vada Pav (single),0.024328859,0.065436242
+Chai Shai at 4,Veggie Maggi,0.048657718,0.053691275
+Desserts,Gulab jamun - 1 pc,0.25,0.1
+Desserts,Gulab Jamuns- 2 pc,0.25,0.1
+Desserts,NULL,0.5,0.8
+Drinks,Mango Lassi Jumbo,0.05,0.05
+Drinks,Masala Chaas Jumbo,0.1,0.05
+Drinks,Masala Chaas Regular,0.05,0.05
+Drinks,Masala Shikanjee Jumbo,0.05,0.05
+Drinks,Masala Shikanjee Regular,0.1,0.05
+Drinks,Maska Lassi (Sweet) Jumbo,0.05,0.05
+Drinks,Maska Lassi (Sweet) Regular,0.1,0.05
+Drinks,Mineral Water,0.1,0.1
+Drinks,NULL,0.4,0.5
+Dum A Dum Rice Combos,Cholle Te Chawal,0.143236074,0.143236074
+Dum A Dum Rice Combos,Dilli Style Rajma Chawal,0.143236074,0.143236074
+Dum A Dum Rice Combos,Lucknowi Biryani,0.144562334,0.139257294
+Dum A Dum Rice Combos,NULL,0.139257294,0.144562334
+Dum A Dum Rice Combos,Pulav With Daal Makhani,0.156498674,0.129973475
+Dum A Dum Rice Combos,Ram Khichdee,0.143236074,0.143236074
+Dum A Dum Rice Combos,Tadka Daal Chawal,0.129973475,0.156498674
+Family Curry Packs,NULL,0.5,0.4
+Family Curry Packs,Paneer Bhurji-Large,0.25,0.3
+Family Curry Packs,Paneer Bhurji-Small,0.25,0.3
+Halka Phulka,Halka Phulka 1,0.202453988,0.202453988
+Halka Phulka,Halka Phulka 2,0.243353783,0.243353783
+Halka Phulka,Halka Phulka 3,0.308793456,0.308793456
+Halka Phulka,NULL,0.245398773,0.245398773
+Indian Breads,Ext Bhatura,0.026737968,0.114973262
+Indian Breads,Ext Tawa Parantha,0.06684492,0.093582888
+Indian Breads,Extra Amritsari Kulcha,0.104278075,0.034759358
+Indian Breads,Extra Poori,0.032085561,0.114973262
+Indian Breads,Jowar-Bajra Roti,0.093582888,0.088235294
+Indian Breads,Masala Kulcha,0.104278075,0.032085561
+Indian Breads,Naan,0.093582888,0.093582888
+Indian Breads,NULL,0.093582888,0.06684492
+Indian Breads,Papad,0.034759358,0.104278075
+Indian Breads,Phulka,0.032085561,0.104278075
+Indian Breads,Raita Small,0.114973262,0.026737968
+Indian Breads,Stuffed Parantha,0.114973262,0.032085561
+Indian Breads,Tandoori Roti,0.088235294,0.093582888
+Mast Curry Combos,Baigan Bharta Combo,0.068786127,0.068786127
+Mast Curry Combos,Balle Balle Pindi Chole,0.061849711,0.080346821
+Mast Curry Combos,BB Pindi Cholle,0.080346821,0.066473988
+Mast Curry Combos,Cholle Bhaturi,0.039884393,0.097687861
+Mast Curry Combos,Dilli Kadhai Paneer Combo,0.074566474,0.068786127
+Mast Curry Combos,Full Full Biryani Combo,0.080346821,0.061849711
+Mast Curry Combos,Kebab Connection - Paneer Tikka,0.091907514,0.057225434
+Mast Curry Combos,Kiddy Combo,0.057225434,0.091907514
+Mast Curry Combos,NULL,0.066473988,0.080346821
+Mast Curry Combos,Paneer Bhurji Combo,0.068786127,0.068786127
+Mast Curry Combos,Power Combo,0.068786127,0.074566474
+Mast Curry Combos,Sinful Punjabi Paneer,0.074566474,0.068786127
+Mast Curry Combos,Smoked Baigan Bhartha,0.068786127,0.074566474
+Mast Curry Combos,The Great Indian Maha Combo,0.097687861,0.039884393
+Parantha Combos,Achaari Paneer Parrantha - Mutigrain,0.076160991,0.068111455
+Parantha Combos,Achaari Paneer Parrantha - Whole Wheat,0.06996904,0.06996904
+Parantha Combos,Aloo Do Payaza - Mutigrain,0.06996904,0.06996904
+Parantha Combos,Aloo Do Payaza - Whole Wheat,0.06377709,0.076160991
+Parantha Combos,Bindaas Gobi - Mutigrain,0.06996904,0.06996904
+Parantha Combos,Bindaas Gobi - Whole Wheat,0.06377709,0.076160991
+Parantha Combos,Cheesy Spring Onion - Mutigrain,0.076160991,0.06377709
+Parantha Combos,Cheesy Spring Onion - Whole Wheat,0.06996904,0.06996904
+Parantha Combos,Chilli Cheese Parantha - Whole Wheat,0.06996904,0.06996904
+Parantha Combos,Chilli Cheese Parrantha - Mutigrain,0.076160991,0.06377709
+Parantha Combos,Masala Aloo - Multigrain,0.06996904,0.06996904
+Parantha Combos,Masala Aloo - Whole Wheat,0.06130031,0.094736842
+Parantha Combos,NULL,0.068111455,0.076160991
+Parantha Combos,Paranthe waali Galli - Whole Wheat,0.094736842,0.06130031
+Starters,Aloo Sikandari,0.111194591,0.066115702
+Starters,Cholle Samose Ki Chaat,0.058602554,0.111194591
+Starters,Dahi Papdi Chaat,0.048084147,0.118707739
+Starters,Hara Bhara Kebab,0.111194591,0.058602554
+Starters,Hot 'n' Spicy Tikki Platter,0.051089406,0.118707739
+Starters,Jumbo Kebab Platter,0.115702479,0.051089406
+Starters,Masala Pav Bhaji,0.066115702,0.111194591
+Starters,Mini Kebab Platter,0.118707739,0.048084147
+Starters,NULL,0.07513148,0.074380165
+Starters,Pakode Shakode Platter,0.074380165,0.07513148
+Starters,Paneer Tikka,0.118707739,0.051089406
+Starters,Tikki Chaat,0.051089406,0.115702479
